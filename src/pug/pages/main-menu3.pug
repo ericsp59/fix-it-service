@@ -1,0 +1,9 @@
+-var selected = 'Домашняя';
+-var menu = { 'Домашняя': '#', 'Ремонты': '/', 'Служба сервиса': '/', 'Контакты': '/', 'Вакансии': '/' };
+ul
+    each item, key in menu
+        li
+            if selected === key
+                a.selected(href=item, title=key)= key
+            else    
+                a(href='#', title=key)= key

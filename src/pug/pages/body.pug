@@ -1,78 +1,103 @@
-header.main__header
-    nav.main__navigation
-        a.main__header-logo(href="#")
-            img(src="#", alt="Fix-IT-Service logo")
-        ul.main__site-navigation
-            li.main__site-navigation-item
-                a(href="") Домашняя
-            li.main__site-navigation-item
-                a(href="") Ремонты
-            li.main__site-navigation-item
-                a(href="") Контакты
-            li.main__site-navigation-item
-                a(href="") Служба сервиса 
-                ul.main__site-subnavigation
-                    li.main__site-subnavigation-item
-                        a(href="") Домашняя
-                    li.main__site-subnavigation-item
-                        a(href="") Ремонты
-                    li.main__site-subnavigation-item
-                        a(href="") Контакты
-                    li.main__site-subnavigation-item
-                        a(href="") Служба сервиса
+header.main-header
+    nav.navbar.navbar-inverse.hight( role="navigation" ).dark
+        .navbar-header.header-nav__menu.col-md-3.col-sm-4
+            button.navbar-toggle.collapsed(data-target="#navbar-inverse", data-toggle="collapse", type="button", aria-controls="navbar", aria-expanded="false")
+                span.sr-only Toggle navigation
+                span.icon-bar 
+                span.icon-bar 
+                span.icon-bar
+            //a.navbar-brand(href="#")
+            img(src="static/img/logo.png", alt="Fix-IT-Service logo").navbar-brand
 
-        ul.main__contacts
-            li.main__phone 891234567890
-            li.main__address г.Пермь, ул.Строителей 3, оф. 345
+        #navbar-inverse.collapse.navbar-collapse
+            ul.nav.navbar-nav.header-nav__nav.col-md-5.col-sm-8
+                li.active1: a( href="#") Домашняя
+                li: a( href="#about" ) Ремонты
+                li: a( href="#contact" ) Контакты
+                li.dropdown
+                    a.dropdown-toggle(data-toggle="dropdown", href="#", role="button", aria-expanded="false") Служба сервиса 
+                        span.caret
+                    ul.dropdown-menu( role="menu" )
+                        li: a( href="#" ) Action
+                        li: a( href="#" ) Another action
+                        li: a( href="#" ) Something else here
+                        li.divider
+                        li.dropdown-header Nav header
+                        li: a( href="#" ) Separated link
+                        li: a( href="#" ) One more separated link
 
-        span.main__search search form
+            .header-nav__contacts.col-md-2.col-sm-6
+                span.navbar-form.navbar-left(role="phone" action="") 
+                    .form-group
+                        p 8-999-789-55-44
+                        p г.Пермь, ул Строителей 34 оф. 345  
 
-main.containers
-    section.main__features
-        ul.main__slick-slider.multiple-items
-            li.main__slick-slider__item
-                h1 Мы ремонтируем ноутбуки, планшеты и другие гаджеты
-                p Наше имя говорит само за себя. Мы сделаем работу, и сделаем это быстро. Неважно, что это за устройство? Мы отремонтируем его по справедливой цене                 
-            li.main__slick-slider__item
-                h1 Мы специалисты по ремонту сотовых телефонов!
-                p ты уронил или сломал телефон? Наши высококвалифицированные специалисты по ремонту готовы все исправить.  
-            li.main__slick-slider__item
-                h1 Более 20000 телефонов отремонтировано с 2014 года
-                p Будьте спокойны, зная, что наши специалисты полностью сертифицированы и отремонтировали тысячи устройств перед вашим!             
-        button.btn Отремонтировать устройство
+            .header-nav__search.col-md-2.col-sm-6
+                form.navbar-form.navbar-right(action="" role="search") 
+                    .form-group
+                        input.form-control(placeholder="Search" type="text") 
 
-    section.main__devices
-        h1.hidden devices
-        ul.devices__slider
-            li.devices__slider-item
-                img(src="#", alt="Смартфоны")
-                p Смартфоны
-            li.devices__slider-item
-                img(src="#", alt="Планшеты")
-                p Планшеты
-            li.devices__slider-item
-                img(src="#", alt="Ноутбуки")
-                p Ноутбуки
-            li.devices__slider-item
-                img(src="#", alt="Компьютеры")
-                p Компьютеры
-            li.devices__slider-item
-                img(src="#", alt="Смарт-часы")
-                p Смарт-часы
-            li.devices__slider-item
-                img(src="#", alt="Игровые консоли")
-                p Игровые консоли
-            li.devices__slider-item
-                img(src="#", alt="Плейеры")
-                p Плейеры
+main.container-fluid.wide
+    section.features.row
+        .col-md-4 
+            ul.features__slick-slider.multiple-items
+                li.features__slick-slider__item
+                    img(src="#", alt="")
+                    h1 Мы ремонтируем ноутбуки, планшеты и другие гаджеты
+                    p Наше имя говорит само за себя. Мы сделаем работу, и сделаем это быстро. Неважно, что это за устройство? Мы отремонтируем его по справедливой цене                 
+                li.features__slick-slider__item
+                    img(src="#", alt="")
+                    h1 Мы специалисты по ремонту сотовых телефонов!
+                    p ты уронил или сломал телефон? Наши высококвалифицированные специалисты по ремонту готовы все исправить.  
+                li.features__slick-slider__item
+                    img(src="#", alt="")
+                    h1 Более 20000 телефонов отремонтировано с 2014 года
+                    p Будьте спокойны, зная, что наши специалисты полностью сертифицированы и отремонтировали тысячи устройств перед вашим!             
+            button.btn.btn-primary Отремонтировать устройство
 
-    section.main__about
-        h1 Вы ломаете мы делаем
-        p Мы делаем быстрый ремонт телефона. В большинстве случаев технические специалисты смогут отремонтировать ваше устройство за считанные минуты. Dаш телефон бутет готов через 45 минут или меньше.
-        button.btn О нас
-        img(src="#", alt="смартфон")
+    
 
-    section.main__why-we
+    section.devices.row
+        h1.visually-hidden devices
+        ul.devices__slider.col-sm-12
+            li.devices__slider-item
+                a(href="#")
+                    img(src="static/img/smartphone.svg", alt="Смартфоны")
+                    p Смартфоны
+            li.devices__slider-item
+                a(href="#")
+                    img(src="static/img/tablet-3.svg", alt="Планшеты")
+                    p Планшеты
+            li.devices__slider-item
+                a(href="#")
+                    img(src="static/img/laptop.png", alt="Ноутбуки")
+                    p Ноутбуки
+            li.devices__slider-item
+                a(href="#")
+                    img(src="static/img/pc.svg", alt="Компьютеры")
+                    p Компьютеры
+            li.devices__slider-item
+                a(href="#")
+                    img(src="static/img/watch.png", alt="Смарт-часы")
+                    p Смарт-часы
+            li.devices__slider-item
+                a(href="#")
+                    img(src="static/img/game.svg", alt="Игровые консоли")
+                    p Игровые консоли
+            li.devices__slider-item
+                a(href="#")
+                    img(src="static/img/mp3.png", alt="Плейеры")
+                    p Плейеры
+
+    section.main__about.row.dark
+        .col-sm-6.col-xs-12
+            h1 Вы ломаете мы делаем
+            p Мы делаем быстрый ремонт телефона. В большинстве случаев технические специалисты смогут отремонтировать ваше устройство за считанные минуты. Dаш телефон бутет готов через 45 минут или меньше.
+            button.btn О нас
+        .col-sm-6.col-xs-12    
+            //- img(src="static/img/phone_1.png", alt="смартфон")
+
+    section.main__why-we.row
         h1 Почему вы выбираете нас?
         ul.why-we__list
             li.why-we__item
@@ -158,7 +183,7 @@ main.containers
                 img(src="#", alt="фото клиента")
             
     section.main__location
-        h1.hidden location
+        h1.visually-hidden location
         .map
         article
             h3 Название офиса

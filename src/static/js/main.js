@@ -29,10 +29,10 @@ $(document).ready(function(){
             "background3.png"
         ];
 
-        $(".header-main__inner")
+        $(".features")
         .css({"background":"url('http://localhost:3000/static/img/" + walls[counter()] + "')no-repeat"})
-        .animate({ 'background-size':'100%' }, 0)
-        .animate({ 'background-size':'110%' }, 12000, function(){})
+        .animate({ 'background-size':'110%' }, 0)
+        .animate({ 'background-size':'130%' }, 12000, function(){})
     }
      changeWallpapers();
     var intervalCsaHead = setInterval(changeWallpapers, 12000);

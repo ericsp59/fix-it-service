@@ -1,7 +1,44 @@
 @import "libs.styl"
+@import "fonts.styl"
 @import "vars.styl"
 @import "media.styl"
 
+body
+    //width: 99%;
+    h1
+        font-size: 44px
+    button:focus, .btn:focus      
+        outline none
+        box-shadow 0 0 0 3px #fff, 0 0 0 6px sushi
+
+    a
+        text-decoration: none
+
+    a:hover, a:focus
+        outline none
+        color sushi
+
+    background-color: gallery
+    //color shark
+    background-position: top center
+    background-repeat no-repeat  
+
+    margin: 0
+    padding: 0
+    text-transform: uppercase
+    font-family: "PT Sans Narrow"
+    //font-family: "GentiumPlus"
+
+.visually-hidden
+    position absolute
+    width 1px
+    height 1px
+    margin -1px
+    border 0
+    padding 0
+    clip rect(0 0 0 0)
+    overflow hidden
+    
 .wide
     padding-right 0px
     padding-left 0px
@@ -9,72 +46,149 @@
     margin-top: 0px
     margin-bottom 0px    
 
-.header
-    height 800px
-
-.header-nav__nav
-    li
-        a
-            color iron !important ;
-    .dropdown
-        li
-            a
-                color cape-clod !important ;
-
-
-
-.header-nav
-    &__contacts
-        margin-right: 40px;
-        color sushi
-    &__nav
-        .active1
-            background-color black
-            a
-                color sushi !important
-        li
-            margin 0 8px
-
-
-.header-main
-    overflow hidden
-    max-height 710px
-    //position: relative
-    &__inner
-        //position: relative
-        height 100vh        
-        padding-top 20px
-        position: relative
-        background-size cover
-        background-position center center
-        position relative
-        //background url("../img/background1.png") no-repeat
-        //transform: scale(1.0)
-        //transition: all .5 s ease    
-
-    .slick-slider
-        margin-top 50px
-        &__item
-            h1
-                font-size: 4.5em
-            p
-                font-size: 1.5em
-            button
-                height 64px
-                border-radius: 40px
-                color shark
-                background-color sushi
-                border: none
-                padding: 20px 50px
-
-        padding-right 15px
-        padding-left 15px
-        img
-            height 400px
-            width 600px
-            background-color gray
-
-.header-bottom
-    height 17vh
+.dark
     background-color shark
-    color iron  
+    color gallery
+
+.bright
+    background-color gallery
+    color shark
+ 
+
+.main-header
+    .header-nav
+        &__menu
+            .navbar-brand
+                padding 0
+
+        &__contacts
+            p
+                margin 0    
+
+
+/////////////main/////////////////////////
+
+main
+    .features
+        overflow hidden
+        height 80vh
+        min-height: 600px
+        background-color #F4F4F4
+        //background-image: url('/static/img/background1.png')
+        background-size: auto 100%
+
+        ul
+            text-align left 
+            margin-top 30%
+            padding: 0 17%
+        button
+            margin-left 17%    
+
+    .devices
+        min-height: 200px
+        //height 15vh
+        background-color #F4F4F4
+        &__slider
+            list-style: none
+            text-align center
+            //border: 1px solid red
+            padding 0
+            margin 0
+
+        &__slider-item
+            height 100%
+            margin 40px
+            //border: 1px solid red
+            display: inline-block
+            p
+                color dusty-gray
+                font-size: 16px
+            img 
+                height: 80px
+                      
+
+
+    .main__about
+        min-height: 600px
+        height 70vh
+
+        img 
+            width: 100%
+            float right;
+            margin-right: 100px; 
+            margin-top: 50px;
+            
+
+///////////end main///////////////////
+
+
+
+// .header
+//     height 800px
+
+// .header-nav__nav
+//     li
+//         a
+//             color iron !important ;
+//     .dropdown
+//         li
+//             a
+//                 color cape-clod !important ;
+
+
+
+// .header-nav
+//     &__contacts
+//         margin-right: 40px;
+//         color sushi
+//     &__nav
+//         .active1
+//             background-color black
+//             a
+//                 color sushi !important
+//         li
+//             margin 0 8px
+
+
+// .header-main
+//     overflow hidden
+//     max-height 710px
+//     //position: relative
+//     &__inner
+//         //position: relative
+//         height 100vh        
+//         padding-top 20px
+//         position: relative
+//         background-size cover
+//         background-position center center
+//         position relative
+//         //background url("../img/background1.png") no-repeat
+//         //transform: scale(1.0)
+//         //transition: all .5 s ease    
+
+//     .slick-slider
+//         margin-top 50px
+//         &__item
+//             h1
+//                 font-size: 4.5em
+//             p
+//                 font-size: 1.5em
+//             button
+//                 height 64px
+//                 border-radius: 40px
+//                 color shark
+//                 background-color sushi
+//                 border: none
+//                 padding: 20px 50px
+
+//         padding-right 15px
+//         padding-left 15px
+//         img
+//             height 400px
+//             width 600px
+//             background-color gray
+
+// .header-bottom
+//     height 17vh
+//     background-color shark
+//     color iron  

@@ -1,0 +1,124 @@
+@media (max-width: 576px)
+    main
+        .features
+            min-height: 40vh !important
+            background-image: url('/static/img/background4.png') !important
+
+
+@media (min-width: 768px)
+    .can-repair
+        //
+        &__list
+            //
+        &__item
+            position relative
+            display: inline-block;
+            width: 300px
+            min-width 300px
+            min-height 250px
+            padding: 20px
+            text-align center
+            a,p
+                display: block
+                margin 0 auto
+                width: 180px
+                font-size 18px
+            a    
+                font-size 21px
+
+            .btn
+                position: absolute
+                bottom: 10px
+                right 60px
+                
+                  
+            //
+    .business
+        background: url('/static/img/background7.jpg')no-repeat 0 0 !important
+        background-color: shark !important
+        background-size: cover !important
+        background-position: center !important
+        &__wrapper
+            padding-top 10% !important
+            padding-bottom 10% !important
+            //width: 100% !important
+            text-align: left
+            margin-left 15% !important
+            h1
+                width: 40%
+                color gallery !important
+            p  
+                width: 40%
+                color gallery !important
+
+
+@media (max-width: 992px)
+    main
+        text-align center !important 
+        .features
+            background-image: url('/static/img/background5.png') !important
+            
+            ul
+                padding 0 !important
+                text-align center !important 
+            button
+                margin-left 0 !important      
+        h1
+            font-size 32px !important
+
+        .left
+            padding-left 10px !important 
+        .right
+            img 
+                width 70%  !important         
+
+
+@media (min-width: 992px)
+    main
+        .features-wrapper
+            padding-bottom 20px
+        h1
+            font-size 48px
+        p    
+            font-size 21px      
+
+    .left
+        text-align left !important
+        margin-bottom 20px
+
+    .right
+            img 
+                margin-top 70px !important 
+
+
+    .why-we
+        &__wrapper
+            //margin-right 20px
+        padding 70px !important
+        height 80vh !important
+        min-height: 800px
+        background-image: url('/static/img/background6.png')
+        background-size cover
+        h1
+            text-align: right  
+        &__item
+            float: right
+            text-align: right  
+
+     
+
+
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+@media (min-width: 1200px)
+    main
+        .features
+            height 80vh !important
+            
+    .left
+        margin-top 80px !important
+
+
+    .can-repair
+        &__list
+            //
+            width 65%

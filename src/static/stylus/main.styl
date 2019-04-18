@@ -4,9 +4,15 @@
 @import "media.styl"
 
 body
+
+    i
+        vertical-align: middle;
+        margin-right 10px
+    li
+        list-style: none
     //width: 99%;
     h1
-        font-size: 44px
+        //font-size: 48px
     button:focus, .btn:focus      
         outline none
         box-shadow 0 0 0 3px #fff, 0 0 0 6px sushi
@@ -28,6 +34,14 @@ body
     text-transform: uppercase
     font-family: "PT Sans Narrow"
     //font-family: "GentiumPlus"
+
+.accent
+    color: sushi
+    font-size: 27px
+
+.row
+    width 100%
+    margin 0       
 
 .visually-hidden
     position absolute
@@ -69,20 +83,28 @@ body
 /////////////main/////////////////////////
 
 main
+    .features-wrapper
+        box-sizing: border-box
+        height: auto
+        //overflow: hidden;
+        //height: 300px
     .features
-        overflow hidden
-        height 80vh
-        min-height: 600px
+        position relative
+        min-height 60vh
+        height auto
+        //min-height: 600px
         background-color #F4F4F4
-        //background-image: url('/static/img/background1.png')
-        background-size: auto 100%
-
+        background-image: url('/static/img/background1.png')
+        //background-attachment: fixed
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
         ul
             text-align left 
-            margin-top 30%
+            margin-top 20%
             padding: 0 17%
         button
-            margin-left 17%    
+            margin-left 16%    
 
     .devices
         min-height: 200px
@@ -109,16 +131,93 @@ main
 
 
     .main__about
-        min-height: 600px
-        height 70vh
+        //min-height: 600px
+        height 100%
+        .left
+            text-align center
+            font-size: 25px
+            margin-top: 50px
+            padding-left 150px
+            h1
+                font-size 48px
+                margin-bottom 25px
 
-        img 
-            width: 100%
-            float right;
-            margin-right: 100px; 
-            margin-top: 50px;
-            
+        .right
+            text-align  center
+            img 
+                width 70%
+                height: auto
+                //float right;
+                margin 30px 30px
+                margin-top: 30px;
 
+
+    .why-we
+        background-repeat: no-repeat
+        height auto
+        padding 60px
+                
+        a
+            color shark
+            text-decoration: none;
+
+        p
+            color shark 
+
+        i
+            color sushi    
+
+        &__item
+            transition: all 0.2s ease;
+            margin-top 40px
+            &:hover, &:focus
+                p
+                    color shark
+                    text-shadow: 0 0 .65px #333, 0 0 .65px #333; 
+
+    .can-repair
+        padding: 40px 0px
+        text-align center
+        a
+            color gallery
+            text-decoration: none;
+        p
+            color soft-gray
+            //    
+        &__list
+            margin 0 auto
+            padding: 0
+            //  
+        &__item
+            border 1px solid soft-gray
+            border-radius: 20px
+            &:hover, &:focus
+                box-shadow: 0px 8px 20px rgba(255,255,255,.5);
+            margin-bottom 20px
+            margin-right 20px
+            margin-left 20px
+            padding: 10px
+            vertical-align: top;
+            //    
+
+    .business
+        background: url('/static/img/background8.png')no-repeat 0 0
+        background-size: cover
+        background-color: gallery 
+        height auto
+        &__wrapper
+            margin 0 auto
+            width: 50%
+            padding-top 10px
+            padding-bottom 30px
+            h1
+                color shark
+                padding-bottom: 40px
+            p
+                color shark    
+                padding-bottom: 20px
+
+        
 ///////////end main///////////////////
 
 

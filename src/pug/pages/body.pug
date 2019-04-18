@@ -38,8 +38,8 @@ header.main-header
                         input.form-control(placeholder="Search" type="text") 
 
 main.container-fluid.wide
-    section.features.row
-        .col-md-4 
+    section.features
+        .features-wrapper.col-sm-12.col-md-6 
             ul.features__slick-slider.multiple-items
                 li.features__slick-slider__item
                     img(src="#", alt="")
@@ -89,74 +89,75 @@ main.container-fluid.wide
                     img(src="static/img/mp3.png", alt="Плейеры")
                     p Плейеры
 
-    section.main__about.row.dark
-        .col-sm-6.col-xs-12
+    section.main__about.dark.row
+        .left.col-md-6.col-xs-12
             h1 Вы ломаете мы делаем
-            p Мы делаем быстрый ремонт телефона. В большинстве случаев технические специалисты смогут отремонтировать ваше устройство за считанные минуты. Dаш телефон бутет готов через 45 минут или меньше.
-            button.btn О нас
-        .col-sm-6.col-xs-12    
-            //- img(src="static/img/phone_1.png", alt="смартфон")
+            p Мы делаем <span class="accent"> быстрый ремонт </span> телефона. В большинстве случаев технические специалисты смогут отремонтировать ваше устройство за считанные минуты. Dаш телефон бутет готов через <span class="accent"> 45 минут или меньше</span>.
+            a(href="#").btn.btn-primary О нас
+        .right.col-md-6.col-xs-12    
+            img(src="static/img/phone_1.png", alt="смартфон")
 
-    section.main__why-we.row
-        h1 Почему вы выбираете нас?
-        ul.why-we__list
-            li.why-we__item
-                a(href="")   
-                    img(src="#", alt="секундомер")
-                a(href="")
-                    b.title Ремонт в тот же день
-                p.description Когда ваш телефон ломается, вы не хотите ждать до завтра - вам нужно, чтобы он был исправлен сегодня.
-            li.why-we__item
-                a(href="")   
-                    img(src="#", alt="копилка")
-                a(href="")
-                    b.title Гарантия низкой цены
-                p.description Самая низкая ценовая политика в регионе
-            li.why-we__item
-                a(href="")   
-                    img(src="#", alt="сертификат")
-                a(href="")
-                    b.title Надежная гарантия
-                p.description предлагает самую надежную гарантию на рынке.
+    section.why-we.row
+        .col-sm-12.col-md-6.col-lg-8
+        .why-we__wrapper.col-sm-12.col-md-6.col-lg-4
+            h1 Почему вы выбираете нас?
+            ul.why-we__list
+                li.why-we__item
+                    a(href="")
+                        <i class="fas fa-stopwatch fa-5x"></i>
+                        b.title Ремонт в тот же день            
+                    p.description Когда ваш телефон ломается, вы не хотите ждать до завтра - вам нужно, чтобы он был исправлен сегодня.
+                li.why-we__item
+                    a(href="")
+                        <i class="fas fa-piggy-bank fa-5x"></i>
+                        b.title Гарантия низкой цены
+                    p.description Самая низкая ценовая политика в регионе
+                li.why-we__item
+                    a(href="")
+                        <i class="fas fa-cubes fa-5x"></i>
+                        b.title Надежная гарантия
+                    p.description предлагает самую надежную гарантию на рынке.
 
-    section.can-repair
+    section.can-repair.row.dark
         h1 Какие проблемы мы можем исправить?
         ul.can-repair__list
            li.can-repair__item
                 a(href="")
                    b.title Поврежденный дисплей
                 p.description Услуги по замене треснутого экрана являются быстрыми и доступными.
-                a.button(href="") Подробнее
+                a(href="").btn.btn-primary Подробнее
            li.can-repair__item
                 a(href="")
                    b.title Залили водой
                 p.description Мы проведем диагностику, чтобы определить степень повреждения.
-                a.button(href="") Подробнее
+                a(href="").btn.btn-primary Подробнее
            li.can-repair__item
-                a(href="")
+                a(href="#")
                    b.title Плохо работает динамик
                 p.description Возможно, вам потребуется ремонт или замена динамика.
-                a.button(href="") Подробнее
+                a(href="#").btn.btn-primary Подробнее
            li.can-repair__item
-                a(href="")
+                a(href="#")
                    b.title Не ловит сигнал
                 p.description Когда слабый сигнал или нет сигнала.
-                a.button(href="") Подробнее
+                a(href="#").btn.btn-primary Подробнее
            li.can-repair__item
-                a(href="")
+                a(href="#")
                    b.title Поврежденные кнопки
                 p.description Если кнопки на вашем устройстве неисправны или сломаны.
-                a.button(href="") Подробнее
+                a(href="#").btn.btn-primary Подробнее
            li.can-repair__item
-                a(href="")
+                a(href="#")
                    b.title Мертвая батарея
                 p.description Мы подберем и заменим вашу батарею
-                a.button(href="") Подробнее
-
+                a(href="#").btn.btn-primary Подробнее
+                
     section.business
-        h1 Наш ремонт поможет вашему бизнесу
-        p Сломанные и медленно работающие устройства могут снизить производительность для больших и малых компаний. FixTeam может снова начать процветать.
-        button Связаться с нами
+        .business__wrapper
+            h1 Наш ремонт поможет вашему бизнесу
+            p Сломанные и медленно работающие устройства могут снизить производительность для больших и малых компаний. FixTeam может снова начать процветать.
+            button.btn.btn-primary Связаться с нами
+
 
     section.can-fix
         img(src="#", alt="iphone")

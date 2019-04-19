@@ -29,8 +29,8 @@ header.main-header
             .header-nav__contacts.col-md-2.col-sm-6
                 span.navbar-form.navbar-left(role="phone" action="") 
                     .form-group
-                        p 8-999-789-55-44
-                        p г.Пермь, ул Строителей 34 оф. 345  
+                        //- p 8-999-789-55-44
+                        //- p г.Пермь, ул Строителей 34 оф. 345  
 
             .header-nav__search.col-md-2.col-sm-6
                 form.navbar-form.navbar-right(action="" role="search") 
@@ -39,20 +39,20 @@ header.main-header
 
 main.container-fluid.wide
     section.features
-        .features-wrapper.col-sm-12.col-md-6 
+        .features__wrapper
             ul.features__slick-slider.multiple-items
                 li.features__slick-slider__item
                     img(src="#", alt="")
-                    h1 Мы ремонтируем ноутбуки, планшеты и другие гаджеты
-                    p Наше имя говорит само за себя. Мы сделаем работу, и сделаем это быстро. Неважно, что это за устройство? Мы отремонтируем его по справедливой цене                 
+                    h1 Мы ремонтируем ноутбуки,<br> планшеты и <br> другие гаджеты
+                    p Наше имя говорит само за себя! <br> Мы сделаем работу, и сделаем это быстро. Неважно, что это за устройство. <br> Мы отремонтируем его по справедливой цене                 
                 li.features__slick-slider__item
                     img(src="#", alt="")
-                    h1 Мы специалисты по ремонту сотовых телефонов!
-                    p ты уронил или сломал телефон? Наши высококвалифицированные специалисты по ремонту готовы все исправить.  
+                    h1 Мы специалисты по ремонту <br> сотовых телефонов!
+                    p ты уронил или сломал телефон? Наши высококвалифицированные <br>специалисты по ремонту готовы все исправить.  
                 li.features__slick-slider__item
                     img(src="#", alt="")
-                    h1 Более 20000 телефонов отремонтировано с 2014 года
-                    p Будьте спокойны, зная, что наши специалисты полностью сертифицированы и отремонтировали тысячи устройств перед вашим!             
+                    h1 Более 20000 телефонов <br> отремонтировано <br> с 2014 года
+                    p Будьте спокойны, зная, что наши специалисты полностью сертифицированы и <br> отремонтировали тысячи устройств перед вашим!             
             button.btn.btn-primary Отремонтировать устройство
 
     
@@ -89,17 +89,16 @@ main.container-fluid.wide
                     img(src="static/img/mp3.png", alt="Плейеры")
                     p Плейеры
 
-    section.main__about.dark.row
-        .left.col-md-6.col-xs-12
+    section.about.dark.row
+        .about__text.col-xs-12.col-sm-12.col-md-6
             h1 Вы ломаете мы делаем
             p Мы делаем <span class="accent"> быстрый ремонт </span> телефона. В большинстве случаев технические специалисты смогут отремонтировать ваше устройство за считанные минуты. Dаш телефон бутет готов через <span class="accent"> 45 минут или меньше</span>.
             a(href="#").btn.btn-primary О нас
-        .right.col-md-6.col-xs-12    
+        .about__image.col-xs-12.col-sm-12.col-md-6   
             img(src="static/img/phone_1.png", alt="смартфон")
 
     section.why-we.row
-        .col-sm-12.col-md-6.col-lg-8
-        .why-we__wrapper.col-sm-12.col-md-6.col-lg-4
+        .why-we__wrapper
             h1 Почему вы выбираете нас?
             ul.why-we__list
                 li.why-we__item

@@ -3,6 +3,11 @@
 @import "vars.styl"
 @import "media.styl"
 
+header
+    nav 
+        img
+            max-width 150px
+
 body
 
     i
@@ -11,7 +16,16 @@ body
     li
         list-style: none
     //width: 99%;
+    h1,h2,h3,h4
+        font-family "PollywogCyr"
+        letter-spacing 0.1em
+
     h1
+        font-size 48px
+        font-weight 900
+
+    p,a
+        font-size 2hw
         //font-size: 48px
     button:focus, .btn:focus      
         outline none
@@ -67,7 +81,12 @@ body
 .bright
     background-color gallery
     color shark
- 
+nav.navbar.navbar-inverse
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index 10
+
 
 .main-header
     .header-nav
@@ -82,29 +101,32 @@ body
 
 /////////////main/////////////////////////
 
-main
-    .features-wrapper
-        box-sizing: border-box
-        height: auto
-        //overflow: hidden;
-        //height: 300px
+main.container-fluid
+    margin-top: 50px!important;
     .features
-        position relative
-        min-height 60vh
-        height auto
-        //min-height: 600px
-        background-color #F4F4F4
-        background-image: url('/static/img/background1.png')
-        //background-attachment: fixed
-        background-position: center
-        background-repeat: no-repeat
+        background-image url("/static/img/background1.png")
+        background-repeat no-repeat
         background-size: cover
-        ul
-            text-align left 
-            margin-top 20%
-            padding: 0 17%
-        button
-            margin-left 16%    
+        &__slick-slider
+            padding: 0
+            //
+        &__wrapper
+            font-weight 900
+            padding-top: 8%
+            margin-left 5%
+            width 60%
+            h1
+                margin-bottom 5%
+                color shark
+            p
+                margin-bottom 3%
+                height auto
+                //font-size 2vw
+
+            button
+                margin-bottom 10%
+                border-radius 30px
+                height 50px    
 
     .devices
         min-height: 200px
@@ -124,60 +146,63 @@ main
             display: inline-block
             p
                 color dusty-gray
-                font-size: 16px
+                //font-size: 16px
             img 
                 height: 80px
                       
 
 
-    .main__about
-        //min-height: 600px
-        height 100%
-        .left
+    .about
+        //max-height 600px
+        padding-top: 3%
+        &__text
+            padding-top: 8%
+            padding-left 5%
+            padding-bottom 5%
+            float: left
+            box-sizing: border-box
+        &__image
+            padding-top: 5%
+            padding-bottom 5%
             text-align center
-            font-size: 25px
-            margin-top: 50px
-            padding-left 150px
-            h1
-                font-size 48px
-                margin-bottom 25px
+            img
+                display inline
+                width 50%
+                margin 0 auto
 
-        .right
-            text-align  center
-            img 
-                width 70%
-                height: auto
-                //float right;
-                margin 30px 30px
-                margin-top: 30px;
+
 
 
     .why-we
-        background-repeat: no-repeat
-        height auto
-        padding 60px
-                
-        a
-            color shark
-            text-decoration: none;
+        padding-top: 8%
+        padding-bottom: 3%
+        background-image url("/static/img/background6-1.png")
+        background-repeat no-repeat
+        background-size: cover
+        //
+        &__wrapper
+            //padding-top: 3%
+            margin-left 50%
+            h1
+                margin-right 3%
+                margin-bottom 8%
 
-        p
-            color shark 
 
+        &__list
+            width 70%
+            float left
+            li
+                margin-bottom 8%
         i
-            color sushi    
-
-        &__item
-            transition: all 0.2s ease;
-            margin-top 40px
-            &:hover, &:focus
-                p
-                    color shark
-                    text-shadow: 0 0 .65px #333, 0 0 .65px #333; 
+            color sushi
+        b
+            color shark               
 
     .can-repair
         padding: 40px 0px
         text-align center
+        h1
+            margin-bottom 5%
         a
             color gallery
             text-decoration: none;
@@ -220,74 +245,3 @@ main
         
 ///////////end main///////////////////
 
-
-
-// .header
-//     height 800px
-
-// .header-nav__nav
-//     li
-//         a
-//             color iron !important ;
-//     .dropdown
-//         li
-//             a
-//                 color cape-clod !important ;
-
-
-
-// .header-nav
-//     &__contacts
-//         margin-right: 40px;
-//         color sushi
-//     &__nav
-//         .active1
-//             background-color black
-//             a
-//                 color sushi !important
-//         li
-//             margin 0 8px
-
-
-// .header-main
-//     overflow hidden
-//     max-height 710px
-//     //position: relative
-//     &__inner
-//         //position: relative
-//         height 100vh        
-//         padding-top 20px
-//         position: relative
-//         background-size cover
-//         background-position center center
-//         position relative
-//         //background url("../img/background1.png") no-repeat
-//         //transform: scale(1.0)
-//         //transition: all .5 s ease    
-
-//     .slick-slider
-//         margin-top 50px
-//         &__item
-//             h1
-//                 font-size: 4.5em
-//             p
-//                 font-size: 1.5em
-//             button
-//                 height 64px
-//                 border-radius: 40px
-//                 color shark
-//                 background-color sushi
-//                 border: none
-//                 padding: 20px 50px
-
-//         padding-right 15px
-//         padding-left 15px
-//         img
-//             height 400px
-//             width 600px
-//             background-color gray
-
-// .header-bottom
-//     height 17vh
-//     background-color shark
-//     color iron  

@@ -158,82 +158,107 @@ main.container-fluid.wide
             button.btn.btn-primary Связаться с нами
 
 
-    section.can-fix
-        img(src="#", alt="iphone")
-        h1 Мы можем это исправить
-        p Наши цены на ремонт iPhone конкурентоспособны среди всех жителей города. Мы ремонтируем трещины на экранах для всех моделей iPhone, а также ремонтируем сломанные кнопки, динамики и камеры. Треснувший экран на вашем новом iPhone? Мы это исправим.
-        ul.can-fix__list
-            li.can-fix__item Разъем для наушников
-            li.can-fix__item Порт зарядки
-            li.can-fix__item кнопка Home
-            li.can-fix__item Боковые кнопки
-            li.can-fix__item Камера
-            li.can-fix__item Кнопка включения
-            li.can-fix__item Экран
-            li.can-fix__item аккумулятор
-            li.can-fix__item Не включается
+    section.can-fix.row
+        .can-fix__wrapper
+            .can-fix__inner-img.col-sm-12.col-md-6
+                img(src="/static/img/phone_2.png", alt="iphone")
+            .can-fix__inner-text.col-sm-12.col-md-6
+                h1 Мы можем это исправить
+                p Наши цены на ремонт iPhone конкурентоспособны среди всех жителей города. Мы ремонтируем трещины на экранах для всех моделей iPhone, а также ремонтируем сломанные кнопки, динамики и камеры. Треснувший экран на вашем новом iPhone? Мы это исправим.
+                ul.can-fix__list
+                    li.can-fix__item <span class="marker">1</span> Разъем для наушников                 
+                    li.can-fix__item <span class="marker">2</span>Порт зарядки
+                    li.can-fix__item <span class="marker">3</span>кнопка Home
+                    li.can-fix__item <span class="marker">4</span> Боковые кнопки
+                    li.can-fix__item <span class="marker">5</span>Камера
+                    li.can-fix__item <span class="marker">6</span>Кнопка включения
+                    li.can-fix__item <span class="marker">7</span> Экран
+                    li.can-fix__item <span class="marker">8</span>аккумулятор
+                    li.can-fix__item <span class="marker">9</span>Не включается
 
-    section.main__testimonials
-        h1 Отзывы
-        ul.slider
-            li.slider-item
-                span
-                p текст отзыва 
-                h3 Имя клиента
-                img(src="#", alt="фото клиента")
-            
-    section.main__location
+    section.testimonials.row.dark
+        .testimonials__wrapper
+            h1 Отзывы
+            .slick-slider.multiple-items2
+                .slick-slider__item
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula luctus dictum. Pellentesque sed nibh sed urna pharetra iaculis id nec neque. Pellentesque imperdiet ullamcorper nulla imperdiet volutpat. Proin tincidunt nulla non purus volutpat, non elementum urna bibendum. Fusce ipsum lacus, dapibus nec neque vel, fringilla lacinia odio. 
+                    h3 Анна
+                    img(src="/static/img/testi-1.jpg", alt="фото клиента")
+                .slick-slider__item
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula luctus dictum. Pellentesque sed nibh sed urna pharetra iaculis id nec neque. Pellentesque imperdiet ullamcorper nulla imperdiet volutpat. Proin tincidunt nulla non purus volutpat, non elementum urna bibendum. Fusce ipsum lacus, dapibus nec neque vel, fringilla lacinia odio. 
+                    h3 Елена
+                    img(src="/static/img/testi-2.jpg", alt="фото клиента")
+                .slick-slider__item
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula luctus dictum. Pellentesque sed nibh sed urna pharetra iaculis id nec neque. Pellentesque imperdiet ullamcorper nulla imperdiet volutpat. Proin tincidunt nulla non purus volutpat, non elementum urna bibendum. Fusce ipsum lacus, dapibus nec neque vel, fringilla lacinia odio. 
+                    h3 Михаил
+                    img(src="/static/img/testi-3.jpg", alt="фото клиента")
+            .arrows
+                
+
+
+    section.location.row
         h1.visually-hidden location
-        .map
-        article
-            h3 Название офиса
-            p адрес
-            button подробнее
+        .location__map
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A25cfcfe0e66ee8c7e584ffad2f97b8a00cf76879e5c6f7ad5a5102f63a75f255&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+            article.location__address
+                //- h3 Название офиса
+                img(src="static/img/logo.png", alt="Fix-IT-Service logo")
+                p г.Пермь, ул. Стороителей, д.3, офис 139
+                button.btn.btn-success подробнее
 
-    section.sell
+    section.sell.row.dark
         h2 Продать свое сломанное устройство
-        p Мы платим лучшую цену за сломанные сотовые телефоны и планшеты. Если вы решили не ремонтировать свое устройство, мы с удовольствием купим его у вас.
-        button Продать свое устройство
+        p Мы платим <span class="accent">лучшую цену </span> за сломанные сотовые телефоны и планшеты. Если вы решили не ремонтировать свое устройство, мы с удовольствием купим его у вас.
+        img(src="/static/img/broken_phone.png", alt="")
+        br    
+        button.btn.btn-success Продать свое устройство
 
     section.news
         h1 Последние новости
-        ul.news-list
-            li.news-item
+        ul.news__list
+            li.news__item
                 a(href="")
-                    img(src="#", alt="news-image")
+                    img(src="/static/img/news.png", alt="news-image")
                     span.date
                     span.comments
                     span.author
                 h3.title Что нужно сделать перед продажей iphone
                 p.description Are you planning to sell your iPhone? If yes, then read on to find out what you should do before you sell your Apple Smartphone. There is not just one thing you need to do before selling.
-                button подробнее
-            li.news-item
+                button.btn.btn-primary подробнее
+            li.news__item
                 a(href="")
-                    img(src="#", alt="news-image")
+                    img(src="/static/img/news.png", alt="news-image")
                     span.datetime
                     span.comments
                     span.author
                 h3.title Отключить опцию «Сохранить обычное фото» для экономии места на диске
                 p.description Не хватает места для хранения? Один из способов освободить место для хранения - не сохранять обычные фотографии с функцией HDR на вашем iPhone.
-                button подробнее
+                .div
+                    button.btn.btn-primary подробнее
 
-footer.main__footer
-    ul.footer__block-list
-        li.footer__block-item
-            img(src="#", alt="logo")
+footer.footer.row.dark
+    .footer__block-list
+        .footer__block-item.col-sm-12.col-md-3
+            img(src="static/img/logo.png", alt="logo")
             h4 Часы работы
+            p 10:00 - 20:00
+            p Без обеда и выходных
             ul.social
                 li
-                    a(href="")
-                    img(src="#", alt="VK")
+                    a(href="http://vk.com")
+                        <i class="fab fa-vk fa-3x"></i>
+                    //- img(src="#", alt="VK")
+                    
                 li
                     a(href="")
-                    img(src="#", alt="INST")
+                        <i class="fab fa-instagram fa-3x"></i>
+                    //- img(src="#", alt="INST")
                 li
                     a(href="")
-                    img(src="#", alt="FACEBOOK")
-        li.footer__block-item          
-            h3 Быстрые ссылки
+                        <i class="fab fa-facebook fa-3x"></i>
+                    //- img(src="#", alt="FACEBOOK")
+        .footer__block-item.col-sm-12.col-md-3   
+            h3 ссылки
             ul
                 li
                     a(href="") Ремонты 
@@ -246,8 +271,8 @@ footer.main__footer
                 li
                     a(href="") О нас 
 
-        li.footer__block-item          
-            h3 Ремонтные услуги
+        .footer__block-item.col-sm-12.col-md-3          
+            h3 Рем. услуги
             ul
                 li
                     a(href="") Смартфоны 
@@ -262,7 +287,7 @@ footer.main__footer
                 li
                     a(href="") Игровые консоли 
 
-        li.footer__block-item          
+        .footer__block-item.col-sm-12.col-md-3          
             h3 Информация
             ul
                 li
@@ -276,10 +301,11 @@ footer.main__footer
                 li
                     a(href="") Для бизнеса
 
-    hr
-
-    p изготовлено
-    button by Ericsp        
+    .copyright
+        .col-sm-12
+            hr
+            p изготовлено
+            button.btn.btn-primary by Ericsp        
 
 
                               

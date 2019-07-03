@@ -53,5 +53,19 @@ $(document).ready(function(){
         cssEase: 'linear',
         fade: true
     });
+
+    $('.multiple-items2').slick({
+        autoplay: true,
+        autoplaySpeed: 8000,
+        speed: 1000,
+        infinite: true,
+        dots: false,
+        //slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        cssEase: 'linear',
+        fade: true,
+        appendArrows: ('.arrows')
+    });
     
 });

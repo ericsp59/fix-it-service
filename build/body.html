@@ -126,72 +126,92 @@
       <button class="btn btn-primary">Связаться с нами</button>
     </div>
   </section>
-  <section class="can-fix"><img src="#" alt="iphone"/>
-    <h1>Мы можем это исправить</h1>
-    <p>Наши цены на ремонт iPhone конкурентоспособны среди всех жителей города. Мы ремонтируем трещины на экранах для всех моделей iPhone, а также ремонтируем сломанные кнопки, динамики и камеры. Треснувший экран на вашем новом iPhone? Мы это исправим.</p>
-    <ul class="can-fix__list">
-      <li class="can-fix__item">Разъем для наушников</li>
-      <li class="can-fix__item">Порт зарядки</li>
-      <li class="can-fix__item">кнопка Home</li>
-      <li class="can-fix__item">Боковые кнопки</li>
-      <li class="can-fix__item">Камера</li>
-      <li class="can-fix__item">Кнопка включения</li>
-      <li class="can-fix__item">Экран</li>
-      <li class="can-fix__item">аккумулятор</li>
-      <li class="can-fix__item">Не включается</li>
-    </ul>
+  <section class="can-fix row">
+    <div class="can-fix__wrapper">
+      <div class="can-fix__inner-img col-sm-12 col-md-6"><img src="/static/img/phone_2.png" alt="iphone"/></div>
+      <div class="can-fix__inner-text col-sm-12 col-md-6">
+        <h1>Мы можем это исправить</h1>
+        <p>Наши цены на ремонт iPhone конкурентоспособны среди всех жителей города. Мы ремонтируем трещины на экранах для всех моделей iPhone, а также ремонтируем сломанные кнопки, динамики и камеры. Треснувший экран на вашем новом iPhone? Мы это исправим.</p>
+        <ul class="can-fix__list">
+          <li class="can-fix__item"><span class="marker">1</span> Разъем для наушников                 </li>
+          <li class="can-fix__item"><span class="marker">2</span>Порт зарядки</li>
+          <li class="can-fix__item"><span class="marker">3</span>кнопка Home</li>
+          <li class="can-fix__item"><span class="marker">4</span> Боковые кнопки</li>
+          <li class="can-fix__item"><span class="marker">5</span>Камера</li>
+          <li class="can-fix__item"><span class="marker">6</span>Кнопка включения</li>
+          <li class="can-fix__item"><span class="marker">7</span> Экран</li>
+          <li class="can-fix__item"><span class="marker">8</span>аккумулятор</li>
+          <li class="can-fix__item"><span class="marker">9</span>Не включается</li>
+        </ul>
+      </div>
+    </div>
   </section>
-  <section class="main__testimonials">
-    <h1>Отзывы</h1>
-    <ul class="slider">
-      <li class="slider-item"><span></span>
-        <p>текст отзыва </p>
-        <h3>Имя клиента</h3><img src="#" alt="фото клиента"/>
-      </li>
-    </ul>
+  <section class="testimonials row dark">
+    <div class="testimonials__wrapper">
+      <h1>Отзывы</h1>
+      <div class="slick-slider multiple-items2">
+        <div class="slick-slider__item">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula luctus dictum. Pellentesque sed nibh sed urna pharetra iaculis id nec neque. Pellentesque imperdiet ullamcorper nulla imperdiet volutpat. Proin tincidunt nulla non purus volutpat, non elementum urna bibendum. Fusce ipsum lacus, dapibus nec neque vel, fringilla lacinia odio. </p>
+          <h3>Анна</h3><img src="/static/img/testi-1.jpg" alt="фото клиента"/>
+        </div>
+        <div class="slick-slider__item">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula luctus dictum. Pellentesque sed nibh sed urna pharetra iaculis id nec neque. Pellentesque imperdiet ullamcorper nulla imperdiet volutpat. Proin tincidunt nulla non purus volutpat, non elementum urna bibendum. Fusce ipsum lacus, dapibus nec neque vel, fringilla lacinia odio. </p>
+          <h3>Елена</h3><img src="/static/img/testi-2.jpg" alt="фото клиента"/>
+        </div>
+        <div class="slick-slider__item">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula luctus dictum. Pellentesque sed nibh sed urna pharetra iaculis id nec neque. Pellentesque imperdiet ullamcorper nulla imperdiet volutpat. Proin tincidunt nulla non purus volutpat, non elementum urna bibendum. Fusce ipsum lacus, dapibus nec neque vel, fringilla lacinia odio. </p>
+          <h3>Михаил</h3><img src="/static/img/testi-3.jpg" alt="фото клиента"/>
+        </div>
+      </div>
+      <div class="arrows"></div>
+    </div>
   </section>
-  <section class="main__location">
+  <section class="location row">
     <h1 class="visually-hidden">location</h1>
-    <div class="map"></div>
-    <article>
-      <h3>Название офиса</h3>
-      <p>адрес</p>
-      <button>подробнее</button>
-    </article>
+    <div class="location__map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A25cfcfe0e66ee8c7e584ffad2f97b8a00cf76879e5c6f7ad5a5102f63a75f255&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+      <article class="location__address"><img src="static/img/logo.png" alt="Fix-IT-Service logo"/>
+        <p>г.Пермь, ул. Стороителей, д.3, офис 139</p>
+        <button class="btn btn-success">подробнее</button>
+      </article>
+    </div>
   </section>
-  <section class="sell">
+  <section class="sell row dark">
     <h2>Продать свое сломанное устройство</h2>
-    <p>Мы платим лучшую цену за сломанные сотовые телефоны и планшеты. Если вы решили не ремонтировать свое устройство, мы с удовольствием купим его у вас.</p>
-    <button>Продать свое устройство</button>
+    <p>Мы платим <span class="accent">лучшую цену </span> за сломанные сотовые телефоны и планшеты. Если вы решили не ремонтировать свое устройство, мы с удовольствием купим его у вас.</p><img src="/static/img/broken_phone.png" alt=""/><br/>
+    <button class="btn btn-success">Продать свое устройство</button>
   </section>
   <section class="news">
     <h1>Последние новости</h1>
-    <ul class="news-list">
-      <li class="news-item"><a href=""><img src="#" alt="news-image"/><span class="date"></span><span class="comments"></span><span class="author"></span></a>
+    <ul class="news__list">
+      <li class="news__item"><a href=""><img src="/static/img/news.png" alt="news-image"/><span class="date"></span><span class="comments"></span><span class="author"></span></a>
         <h3 class="title">Что нужно сделать перед продажей iphone</h3>
         <p class="description">Are you planning to sell your iPhone? If yes, then read on to find out what you should do before you sell your Apple Smartphone. There is not just one thing you need to do before selling.</p>
-        <button>подробнее</button>
+        <button class="btn btn-primary">подробнее</button>
       </li>
-      <li class="news-item"><a href=""><img src="#" alt="news-image"/><span class="datetime"></span><span class="comments"></span><span class="author"></span></a>
+      <li class="news__item"><a href=""><img src="/static/img/news.png" alt="news-image"/><span class="datetime"></span><span class="comments"></span><span class="author"></span></a>
         <h3 class="title">Отключить опцию «Сохранить обычное фото» для экономии места на диске</h3>
         <p class="description">Не хватает места для хранения? Один из способов освободить место для хранения - не сохранять обычные фотографии с функцией HDR на вашем iPhone.</p>
-        <button>подробнее</button>
+        <div class="div">
+          <button class="btn btn-primary">подробнее</button>
+        </div>
       </li>
     </ul>
   </section>
 </main>
-<footer class="main__footer">
-  <ul class="footer__block-list">
-    <li class="footer__block-item"><img src="#" alt="logo"/>
+<footer class="footer row dark">
+  <div class="footer__block-list">
+    <div class="footer__block-item col-sm-12 col-md-3"><img src="static/img/logo.png" alt="logo"/>
       <h4>Часы работы</h4>
+      <p>10:00 - 20:00</p>
+      <p>Без обеда и выходных</p>
       <ul class="social">
-        <li><a href=""></a><img src="#" alt="VK"/></li>
-        <li><a href=""></a><img src="#" alt="INST"/></li>
-        <li><a href=""></a><img src="#" alt="FACEBOOK"/></li>
+        <li><a href="http://vk.com"><i class="fab fa-vk fa-3x"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram fa-3x"></i></a></li>
+        <li><a href=""><i class="fab fa-facebook fa-3x"></i></a></li>
       </ul>
-    </li>
-    <li class="footer__block-item">         
-      <h3>Быстрые ссылки</h3>
+    </div>
+    <div class="footer__block-item col-sm-12 col-md-3">  
+      <h3>ссылки</h3>
       <ul>
         <li><a href="">Ремонты </a></li>
         <li><a href="">Местоположение </a></li>
@@ -199,9 +219,9 @@
         <li><a href="">Блог </a></li>
         <li><a href="">О нас </a></li>
       </ul>
-    </li>
-    <li class="footer__block-item">         
-      <h3>Ремонтные услуги</h3>
+    </div>
+    <div class="footer__block-item col-sm-12 col-md-3">         
+      <h3>Рем. услуги</h3>
       <ul>
         <li><a href="">Смартфоны </a></li>
         <li><a href="">Планшеты </a></li>
@@ -210,8 +230,8 @@
         <li><a href="">Смарт-часы </a></li>
         <li><a href="">Игровые консоли </a></li>
       </ul>
-    </li>
-    <li class="footer__block-item">         
+    </div>
+    <div class="footer__block-item col-sm-12 col-md-3">         
       <h3>Информация</h3>
       <ul>
         <li><a href="">Блог</a></li>
@@ -220,9 +240,13 @@
         <li><a href="">Местоположение</a></li>
         <li><a href="">Для бизнеса</a></li>
       </ul>
-    </li>
-  </ul>
-  <hr/>
-  <p>изготовлено</p>
-  <button>by Ericsp        </button>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="col-sm-12">
+      <hr/>
+      <p>изготовлено</p>
+      <button class="btn btn-primary">by Ericsp        </button>
+    </div>
+  </div>
 </footer>

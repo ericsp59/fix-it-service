@@ -61,7 +61,7 @@
               <p>Будьте спокойны, зная, что наши специалисты полностью сертифицированы и <br> отремонтировали тысячи устройств перед вашим!             </p>
             </li>
           </ul>
-          <button class="btn btn-primary">Отремонтировать устройство</button>
+          <button class="btn btn-primary modalCallback">Отремонтировать устройство</button>
         </div>
       </section>
       <section class="devices row">
@@ -121,7 +121,7 @@
         <div class="business__wrapper">
           <h1>Наш ремонт поможет вашему бизнесу</h1>
           <p>Сломанные и медленно работающие устройства могут снизить производительность для больших и малых компаний. <span class="accent">FixTeam </span> поможет снова начать процветать.</p>
-          <button class="btn btn-primary">Связаться с нами</button>
+          <button class="btn btn-primary modalCallback">Связаться с нами</button>
         </div>
       </section>
       <section class="can-fix row">
@@ -176,7 +176,7 @@
       <section class="sell row dark">
         <h2>Продать свое сломанное устройство</h2>
         <p>Мы платим <span class="accent">лучшую цену </span> за сломанное оборудование. Если вы решили не ремонтировать свое устройство, мы с удовольствием купим его у вас.</p><img src="static/img/slom.png" alt="Пароконвектоматы" style=" width: 200px "><br>
-        <button class="btn btn-success">Продать свое устройство</button>
+        <button class="btn btn-success modalCallback">Продать свое устройство</button>
       </section>
       <section class="news">
         <h1>Последние новости</h1>
@@ -248,6 +248,17 @@
         </div>
       </div>
     </footer>
+    <section class="callback-window" id="modal" style="display: none">
+      <div class="modal">
+        <div class="content">
+          <h3 class="title">Мы ва перезвоним</h3>
+          <p>заполните форму, чтобы мы cмогли связаться с вами </p><a class="btn close-modal" id="closeModal" href="#" onclick="closeModal">close</a>
+          <input type="text" value="" placeholder="Имя">
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Телефон"><br>
+          <button class="btn btn-primary" type="submit">Отправить</button>
+        </div>
+      </div>
+    </section>
     <script src="static/js/libs.min.js"></script>
     <script src="static/js/main.js"></script>
   </body>

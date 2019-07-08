@@ -1,0 +1,11 @@
+section.callback-window#modal(style="display: none")
+    .modal
+        .content
+            h3.title Мы ва перезвоним
+            p заполните форму, чтобы мы cмогли связаться с вами 
+            a.btn.close-modal#closeModal(href="#" onclick="closeModal") close
+
+            input(type="text", value="", placeholder="Имя")
+            input(type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Телефон")
+            br
+            button.btn.btn-primary(type="submit") Отправить

@@ -8,95 +8,90 @@ header.main-header
                 span.icon-bar
             //a.navbar-brand(href="#")
             img(src="static/img/logo.png", alt="Fix-IT-Service logo").navbar-brand
+            .phone-nav
+                <a href="tel:+7 (4012) 52 44 07"> +7 (4012) 52 44 07 </a>
 
         #navbar-inverse.collapse.navbar-collapse
-            ul.nav.navbar-nav.header-nav__nav.col-md-5.col-sm-8
+            ul.nav.navbar-nav.header-nav__nav.col-md-5.col-sm-7
                 li.active1: a( href="#") Домашняя
-                li: a( href="#about" ) Ремонты
-                li: a( href="#contact" ) Контакты
-                li.dropdown
-                    a.dropdown-toggle(data-toggle="dropdown", href="#", role="button", aria-expanded="false") Служба сервиса 
-                        span.caret
-                    ul.dropdown-menu( role="menu" )
-                        li: a( href="#" ) Action
-                        li: a( href="#" ) Another action
-                        li: a( href="#" ) Something else here
-                        li.divider
-                        li.dropdown-header Nav header
-                        li: a( href="#" ) Separated link
-                        li: a( href="#" ) One more separated link
+                li: a( href="#advantages" ) Приемущества
+                li: a( href="#forBusiness" ) Ремонт для бизнеса
+                li: a( href="#aboutUs" ) О нас
 
-            .header-nav__contacts.col-md-2.col-sm-6
-                span.navbar-form.navbar-left(role="phone" action="") 
-                    .form-group
-                        //- p 8-999-789-55-44
-                        //- p г.Пермь, ул Строителей 34 оф. 345  
+            .header-nav__contacts.col-md-3.col-sm-4
+                .form-group
+                    .phone
+                        <a href="tel:+7 (4012) 52 44 07"> +7 (4012) 52 44 07 </a>
 
-            .header-nav__search.col-md-2.col-sm-6
+
+            .header-nav.col-md-1.col-sm-3
                 form.navbar-form.navbar-right(action="" role="search") 
                     .form-group
-                        input.form-control(placeholder="Search" type="text") 
+                        //input.form-control(placeholder="Search" type="text")
+                        button.btn.btn-primary.modalCallback Оставить заявку 
 
 main.container-fluid.wide
     section.features
         .features__wrapper
+            h1 Мы специализируемся на обслуживании и ремонте пароконвекционных печей
             ul.features__slick-slider.multiple-items
                 li.features__slick-slider__item
                     img(src="#", alt="")
-                    h1 Мы ремонтируем <br>пароконвекционное <br>оборудование и <br> другие устройства
+                    //h1 Мы ремонтируем <br>пароконвекционное <br>оборудование и <br> другие устройства
                     p Наше имя говорит само за себя! <br> Мы сделаем работу, и сделаем это быстро. Неважно, что это за устройство, <br> мы отремонтируем его по справедливой цене                 
                 li.features__slick-slider__item
                     img(src="#", alt="")
-                    h1 Мы специалисты по ремонту <br> больших холодильников!
+                    //h1 Мы специалисты по ремонту <br> больших холодильников!
                     p Наши высококвалифицированные <br>специалисты по ремонту<br> готовы все исправить.  
                 li.features__slick-slider__item
                     img(src="#", alt="")
-                    h1 Более 20000 единиц промышленного оборудования <br> отремонтировано <br> с 2014 года
-                    p Будьте спокойны, зная, что наши специалисты полностью сертифицированы и <br> отремонтировали тысячи устройств перед вашим!             
+                    //h1 Более 20000 единиц промышленного оборудования <br> отремонтировано <br> с 2014 года
+                    p Будьте спокойны, зная, что наши специалисты <br> отремонтировали тысячи устройств перед вашим!             
             button.btn.btn-primary.modalCallback Отремонтировать устройство
 
     
 
     section.devices.row
-        h1.visually-hidden devices
+        h3 Сферы деятельности
         ul.devices__slider.col-sm-12
             li.devices__slider-item
-                a(href="#")
+                div
                     img(src="static/img/vent.png", alt="Вентиляторы")
-                    p Вентиляторы
+                    p Пароконвекционные печи
             li.devices__slider-item
-                a(href="#")
+                div
                     img(src="static/img/ten.png", alt="тэны")
-                    p Тэны
+                    p Ротационные печи
             li.devices__slider-item
-                a(href="#")
+                div
                     img(src="static/img/gperekl.png", alt="Переключатели")
-                    p Переключателей
+                    p Жарочные и пекарные шкафы
             li.devices__slider-item
-                a(href="#")
+                div
                     img(src="static/img/datchik.png", alt="Датчики")
-                    p Датчики
+                    p Холодильное оборудование
             li.devices__slider-item
-                a(href="#")
+                div
                     img(src="static/img/perekl3.png", alt="Пускатели")
-                    p Пускатели
-            li.devices__slider-item
-                a(href="#")
-                    img(src="static/img/klapan.png", alt="Клапаны")
-                    p Клапаны
-            li.devices__slider-item
-                a(href="#")
-                    img(src="static/img/parokonv.svg", alt="Пароконвектоматы")
-                    p Пароконвектоматы
+                    p Прочее технологическое оборудование
+            //- li.devices__slider-item
+            //-     a(href="#")
+            //-         img(src="static/img/klapan.png", alt="Клапаны")
+            //-         p Клапаны
+            //- li.devices__slider-item
+            //-     a(href="#")
+            //-         img(src="static/img/parokonv.svg", alt="Пароконвектоматы")
+            //-         p Пароконвектоматы
 
     section.about.dark.row
         .about__text.col-xs-12.col-sm-12.col-md-6
-            h1 Вы ломаете мы делаем
+            h1 Оперативный ремонт
             p Мы делаем <span class="accent"> быстрый ремонт </span>В большинстве случаев технические специалисты смогут отремонтировать ваше устройство за считанные часы. Ваше оборудование будет работать <span class="accent"> <br> в этот же день</span>.
             a(href="#").btn.btn-primary О нас
         .about__image.col-xs-12.col-sm-12.col-md-6   
             img(src="static/img/vitr1.png", alt="смартфон")
 
+    a(id="advantages")
     section.why-we.row
         .why-we__wrapper
             h1 Почему вы выбираете нас?
@@ -109,8 +104,8 @@ main.container-fluid.wide
                 li.why-we__item
                     a(href="")
                         <i class="fas fa-piggy-bank fa-5x"></i>
-                        b.title Гарантия низкой цены
-                    p.description Самая низкая ценовая политика в регионе
+                        b.title Приемлемые цены
+                    p.description Оправданная ценовая политика
                 li.why-we__item
                     a(href="")
                         <i class="fas fa-cubes fa-5x"></i>
@@ -121,62 +116,65 @@ main.container-fluid.wide
         h1 Какие проблемы мы можем исправить?
         ul.can-repair__list
            li.can-repair__item
-                a(href="")
+                .can-repair__item__content
                    b.title Отказ техники включаться
-                //- p.description Услуги по замене треснутого экрана являются быстрыми и доступными.
-                a(href="").btn.btn-primary Подробнее
+                   hr
+                br
            li.can-repair__item
-                a(href="")
+                .can-repair__item__content
                    b.title Сбой температурного режима работы.
-                //- p.description Мы проведем диагностику, чтобы определить степень повреждения.
-                a(href="").btn.btn-primary Подробнее
+                   hr
+                br
            li.can-repair__item
-                a(href="#")
-                   b.title Отсутствие пара
-                //- p.description Возможно, вам потребуется ремонт или замена динамика.
-                a(href="#").btn.btn-primary Подробнее
+                .can-repair__item__content
+                    b.title Отсутствие пара
+                    hr
+                br
            li.can-repair__item
-                a(href="#")
-                   b.title Поломка ручки двери пароконвектомата
-                //- p.description Когда слабый сигнал или нет сигнала.
-                a(href="#").btn.btn-primary Подробнее
-           li.can-repair__item
-                a(href="#")
+                .can-repair__item__content
                    b.title Износ уплотнительных резинок двери пароконвектомата
-                //- p.description Если кнопки на вашем устройстве неисправны или сломаны.
-                a(href="#").btn.btn-primary Подробнее
+                   hr
+                br
            li.can-repair__item
-                a(href="#")
+                .can-repair__item__content
                    b.title Засорением кальцием камеры бойлера
-                //- p.description Мы подберем и заменим вашу батарею
-                a(href="#").btn.btn-primary Подробнее
-                
+                   hr
+                br
+           li.can-repair__item
+                .can-repair__item__content
+                   b.title И другие...
+                   hr
+                br              
+    <a id="forBusiness"></a>            
     section.business
         .business__wrapper
             h1 Наш ремонт поможет вашему бизнесу
-            p Сломанные и медленно работающие устройства могут снизить производительность для больших и малых компаний. <span class="accent">FixTeam </span> поможет снова начать процветать.
+            p Сломанное оборудование останавливает ваше производство, что приводит к убыткам.
+            p
+                <span class="accent">FixTeam </span> поможет снова начать процветать.
+            br
             button.btn.btn-primary.modalCallback Связаться с нами
 
 
-    section.can-fix.row
-        .can-fix__wrapper
-            .can-fix__inner-img.col-sm-12.col-md-6
-                img(src="/static/img/parok.png", alt="iphone")
-            .can-fix__inner-text.col-sm-12.col-md-6
-                h1 Мы можем это исправить
-                p Наши цены на ремонт iPhone конкурентоспособны среди всех жителей города. Мы ремонтируем трещины на экранах для всех моделей iPhone, а также ремонтируем сломанные кнопки, динамики и камеры. Треснувший экран на вашем новом iPhone? Мы это исправим.
-                ul.can-fix__list
-                    li.can-fix__item <span class="marker">1</span> Разъем для наушников                 
-                    li.can-fix__item <span class="marker">2</span>Порт зарядки
-                    li.can-fix__item <span class="marker">3</span>кнопка Home
-                    li.can-fix__item <span class="marker">4</span> Боковые кнопки
-                    li.can-fix__item <span class="marker">5</span>Камера
-                    li.can-fix__item <span class="marker">6</span>Кнопка включения
-                    li.can-fix__item <span class="marker">7</span> Экран
-                    li.can-fix__item <span class="marker">8</span>аккумулятор
-                    li.can-fix__item <span class="marker">9</span>Не включается
+    //- section.can-fix.row
+    //-     .can-fix__wrapper
+    //-         .can-fix__inner-img.col-sm-12.col-md-6
+    //-             img(src="/static/img/parok.png", alt="iphone")
+    //-         .can-fix__inner-text.col-sm-12.col-md-6
+    //-             h1 Мы можем это исправить
+    //-             p Наши цены на ремонт iPhone конкурентоспособны среди всех жителей города. Мы ремонтируем трещины на экранах для всех моделей iPhone, а также ремонтируем сломанные кнопки, динамики и камеры. Треснувший экран на вашем новом iPhone? Мы это исправим.
+    //-             ul.can-fix__list
+    //-                 li.can-fix__item <span class="marker">1</span> Разъем для наушников                 
+    //-                 li.can-fix__item <span class="marker">2</span>Порт зарядки
+    //-                 li.can-fix__item <span class="marker">3</span>кнопка Home
+    //-                 li.can-fix__item <span class="marker">4</span> Боковые кнопки
+    //-                 li.can-fix__item <span class="marker">5</span>Камера
+    //-                 li.can-fix__item <span class="marker">6</span>Кнопка включения
+    //-                 li.can-fix__item <span class="marker">7</span> Экран
+    //-                 li.can-fix__item <span class="marker">8</span>аккумулятор
+    //-                 li.can-fix__item <span class="marker">9</span>Не включается
 
-    section.testimonials.row.dark
+    section.testimonials.row
         .testimonials__wrapper
             h1 Отзывы
             .slick-slider.multiple-items2
@@ -196,110 +194,158 @@ main.container-fluid.wide
                 
 
 
-    section.location.row
-        h1.visually-hidden location
-        .location__map
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A25cfcfe0e66ee8c7e584ffad2f97b8a00cf76879e5c6f7ad5a5102f63a75f255&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
-            article.location__address
-                //- h3 Название офиса
-                img(src="static/img/logo.png", alt="Fix-IT-Service logo")
-                p г.Пермь, ул. Стороителей, д.3, офис 139
-                button.btn.btn-success подробнее
+    //- section.location.row
+    //-     h1.visually-hidden location
+    //-     .location__map
+    //-         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A25cfcfe0e66ee8c7e584ffad2f97b8a00cf76879e5c6f7ad5a5102f63a75f255&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+    //-         article.location__address
+    //-             //- h3 Название офиса
+    //-             img(src="static/img/logo.png", alt="Fix-IT-Service logo")
+    //-             p г.Пермь, ул. Стороителей, д.3, офис 139
+    //-             button.btn.btn-success подробнее
 
-    section.sell.row.dark
-        h2 Продать свое сломанное устройство
-        p Мы платим <span class="accent">лучшую цену </span> за сломанное оборудование. Если вы решили не ремонтировать свое устройство, мы с удовольствием купим его у вас.
-        img(src="static/img/slom.png", alt="Пароконвектоматы", style=" width: 200px ")
-        br    
-        button.btn.btn-success.modalCallback Продать свое устройство
+    //- section.sell.row.dark
+    //-     h2 Продать свое сломанное устройство
+    //-     p Мы платим <span class="accent">лучшую цену </span> за сломанное оборудование. Если вы решили не ремонтировать свое устройство, мы с удовольствием купим его у вас.
+    //-     img(src="static/img/slom.png", alt="Пароконвектоматы", style=" width: 200px ")
+    //-     br    
+    //-     button.btn.btn-success.modalCallback Продать свое устройство
 
-    section.news
-        h1 Последние новости
-        ul.news__list
-            li.news__item
-                a(href="")
-                    img(src="/static/img/news.png", alt="news-image")
-                    span.date
-                    span.comments
-                    span.author
-                h3.title Что нужно сделать перед продажей iphone
-                p.description Are you planning to sell your iPhone? If yes, then read on to find out what you should do before you sell your Apple Smartphone. There is not just one thing you need to do before selling.
-                button.btn.btn-primary подробнее
-            li.news__item
-                a(href="")
-                    img(src="/static/img/news.png", alt="news-image")
-                    span.datetime
-                    span.comments
-                    span.author
-                h3.title Отключить опцию «Сохранить обычное фото» для экономии места на диске
-                p.description Не хватает места для хранения? Один из способов освободить место для хранения - не сохранять обычные фотографии с функцией HDR на вашем iPhone.
-                .div
-                    button.btn.btn-primary подробнее
+    a(id="#aboutUs")
+    section.aboutUs
+        h1 Мы производим ремонт оборудования
+        hr
+        .aboutUs-wrapper.container 
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+            .aboutUs-wrapper__item
+                img(src="static/img/logo1.png", alt="")
+                p название technologies
+
+
+
 
 footer.footer.row.dark
     .footer__block-list
-        .footer__block-item.col-sm-12.col-md-3
+        .footer__block-item.col-sm-12.col-md-5
             img(src="static/img/logo.png", alt="logo")
-            h4 Часы работы
-            p 10:00 - 20:00
-            p Без обеда и выходных
+            h4 Часы работы:
+            p
+                span.accent 24 x 7 
+                p Без обеда и выходных
             ul.social
-                li
-                    a(href="http://vk.com")
-                        <i class="fab fa-vk fa-3x"></i>
+                li                   
+                    <i class="fab fa-vk fa-3x"></i>
                     //- img(src="#", alt="VK")
                     
                 li
-                    a(href="")
-                        <i class="fab fa-instagram fa-3x"></i>
+                    <i class="fab fa-instagram fa-3x"></i>
                     //- img(src="#", alt="INST")
                 li
-                    a(href="")
-                        <i class="fab fa-facebook fa-3x"></i>
+                    <i class="fab fa-facebook fa-3x"></i>
                     //- img(src="#", alt="FACEBOOK")
-        .footer__block-item.col-sm-12.col-md-3   
+        .footer__block-item.col-sm-12.col-md-5   
             h3 ссылки
             ul
                 li
-                    a(href="") Ремонты 
+                    a(href="#") Домашняя 
                 li
-                    a(href="") Местоположение 
+                    a(href="#advantages") Приемущества 
                 li
-                    a(href="") Контакты 
+                    a(href="#forBusiness") Ремонт для бизнеса
                 li
-                    a(href="") Блог 
-                li
-                    a(href="") О нас 
+                    a(href="#aboutUs") О нас 
+                    
 
-        .footer__block-item.col-sm-12.col-md-3          
+        .footer__block-item.col-sm-12.col-md-2        
             h3 Рем. услуги
             ul
                 li
-                    a(href="") Смартфоны 
+                    p Пароконвекционные печи
                 li
-                    a(href="") Планшеты 
+                    p Ротационные печи
                 li
-                    a(href="") Ноутбуки 
+                    p Жарочные и пекарные шкафы 
                 li
-                    a(href="") Компьютеры 
+                    p Холодильное оборудование 
                 li
-                    a(href="") Смарт-часы 
-                li
-                    a(href="") Игровые консоли 
+                    p Прочее технологическое оборудование 
 
-        .footer__block-item.col-sm-12.col-md-3          
-            h3 Информация
-            ul
-                li
-                    a(href="") Блог
-                li
-                    a(href="") Найти нас
-                li
-                    a(href="") Информация о франшизе
-                li
-                    a(href="") Местоположение
-                li
-                    a(href="") Для бизнеса
+
+        //- .footer__block-item.col-sm-12.col-md-3          
+        //-     h3 Информация
+        //-     ul
+        //-         li
+        //-             a(href="") Блог
+        //-         li
+        //-             a(href="") Найти нас
+        //-         li
+        //-             a(href="") Информация о франшизе
+        //-         li
+        //-             a(href="") Местоположение
+        //-         li
+        //-             a(href="") Для бизнеса
 
     .copyright
         .col-sm-12

@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     $('.multiple-items').slick({
         autoplay: true,
-        autoplaySpeed: 8000,
+        autoplaySpeed: 2500,
         speed: 1000,
         infinite: true,
         dots: false,
@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     $('.multiple-items2').slick({
         autoplay: true,
-        autoplaySpeed: 8000,
+        autoplaySpeed: 2500,
         speed: 1000,
         infinite: true,
         dots: false,
